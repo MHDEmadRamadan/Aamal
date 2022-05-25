@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Register</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- include css original template -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- include bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <!-- js file -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <!-- include jquery -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- include bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css">
+    </noscript>
+</head>
+
+<!-- start body -->
+
+
+<body class="is-preload">
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+
+        <!-- start here put yaild hader -->
+
+        <!-- end header -->
+
+        <!-- Content -->
+        <div class="wrapper">
+            <div class="inner">
+
+                <!-- start form -->
+                <form method="post" action="#">
+
+                    <!-- first first row -->
+                    <section class="row">
+                        <h2 class="major align-center">Login To More Futures</h2>
+
+                        <!-- left part from form (first row) -->
+                        <section class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+                            <div style="margin-bottom: 15px;">
+                                <label>first name *</label>
+                                <input type="text" name="f1" id="first-name" value="" required maxlength="15">
+                            </div>
+
+                            <div style="margin-bottom: 15px;">
+                                <label>last name *</label>
+                                <input type="text" name="f1" id="last-name" value="" required maxlength="15">
+                            </div>
+
+                            <div style="margin-bottom: 15px;">
+                                <label>your phone *</label>
+                                <input type="text" name="f1" id="phone-number" value="" placeholder="099 999 9999"
+                                    pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="12" title="Ten digits code" required
+                                    onchange="this.value=addSpaces(this.value);">
+                            </div>
+
+                            <div style="margin-bottom: 15px;">
+                                <label>Email *</label>
+                                <input type="email" name="f1" id="e-mail" value="" required maxlength="30">
+                            </div>
+                        </section>
+
+
+
+                        <!-- first right image (first row) -->
+                        <section class="col-xl-6 col-lg-6 col-md-6 d-none d-sm-block d-sm-none d-md-block align-center">
+                            <div>
+                                <img src="images/image/cloud-image.webp" alt="" width="300px" style="margin-top: 30px;">
+                            </div>
+                        </section>
+
+                    </section>
+                    <!-- end first row -->
+
+
+                    <!-- secund row -->
+                    <section class="row">
+
+                        <!-- secund left image (secund row) -->
+                        <section class="col-xl-6 col-lg-6 col-md-6 d-none d-sm-block d-sm-none d-md-block">
+                            <div class="align-center">
+                                <img src="images/image/currect-image.webp" alt="" width="350px"
+                                    style="margin-top: 175px;">
+                            </div>
+                        </section>
+
+                        <!-- right part from form (secund row) -->
+                        <section class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+                            <!-- password part -->
+                            <div>
+                                <div style="margin-bottom: 15px;">
+                                    <label>Password *</label>
+                                    <input type="password" name="password" id="password" onkeyup="checkPass()"
+                                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,50}"
+                                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                                        minlength="8" maxlength="50" required>
+                                </div>
+
+                                <div id="message">
+                                    <h6 class="major">Password must contain the following:</h6>
+                                    <p id="letter" class="invalid">1. <b>lowercase</b> letter
+                                    </p>
+                                    <p id="capital" class="invalid">2. <b>capital
+                                            (uppercase)</b>
+                                        letter</p>
+                                    <p id="number" class="invalid">3. <b>number</b></p>
+                                    <p id="length" class="invalid">4. Minimum <b>8
+                                            characters</b>
+                                    </p>
+                                </div>
+
+                                <div style="margin-bottom: 15px;">
+                                    <label>re-enter Password *</label>
+                                    <input type="password" name="password2" id="password2" onkeyup="checkPass()"
+                                        required>
+
+                                </div>
+                            </div>
+                            <!-- end password part -->
+
+                            <div style="margin-bottom: 15px;">
+                                <label>birthday *</label>
+                                <br>
+                                <input type="date" name="f1" id="birht-day" value="" required>
+                            </div>
+
+                            <!-- start country an city part -->
+                            <section style="margin-bottom: 15px;" class="row">
+
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <label>country *</label>
+                                    <select name="f1" id="country-name" required>
+                                        <option value="">-</option>
+                                        <option value="">-</option>
+                                        <option value="">-</option>
+                                        <option value="">-</option>
+                                        <option value="">-</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <label>city *</label>
+                                    <select name="f1" id="city-name" required>
+                                        <option value="">-</option>
+                                        <option value="">-</option>
+                                        <option value="">-</option>
+                                        <option value="">-</option>
+                                        <option value="">-</option>
+                                    </select>
+                                </div>
+
+                            </section>
+                            <!-- end country an city part -->
+
+                            <div style="margin-bottom: 15px;">
+                                <label>your Career *</label>
+                                <select name="f1" id="career-type" required>
+                                    <option value="">-</option>
+                                    <option value="">-</option>
+                                    <option value="">-</option>
+                                    <option value="">-</option>
+                                    <option value="">-</option>
+                                </select>
+                            </div>
+
+                            <div class="row" style="margin-bottom: 15px;">
+                                <div class="col-xl-12 col-la-12 col-md-12 col-sm-12 col-xs-12">
+                                    <label>your image *</label>
+                                    <label id="button-primary"><input type="file" name="f1" max-size="1000"
+                                            accept="image/*" required
+                                            style="background-color: #4c5c96; opacity: 100%;">Custom Upload</label>
+                                </div>
+                            </div>
+
+                            <div class="row" style="margin-bottom: 15px;">
+                                <div class="col-xl-12 col-la-12 col-md-12 col-sm-12 col-xs-12">
+                                    <label>Your ID-Card image *</label>
+                                    <label id="button-primary"><input type="file" name="f1" max-size="1000"
+                                            accept="image/*" required
+                                            style="background-color: #4c5c96; opacity: 100%;">Custom Upload</label>
+                                </div>
+                            </div>
+
+                            <ul class="actions">
+                                <li><input type="submit" value="Sign in" class="primary"></li>
+                                <li><input type="reset" value="Reset"></li>
+                            </ul>
+
+                        </section>
+
+                    </section>
+                </form>
+
+
+
+
+
+
+
+
+                <section class="row">
+                    <!-- apis section -->
+                    <label for="demo-email">Login with</label>
+
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <button class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 button fit"
+                            style="margin-bottom: 5%;">
+                            <img src="images/icon/facebook-logo.png" width="18px" height="18px" alt=""
+                                class=" img-fluid " style="margin: 10px;">login with Facebook
+                        </button>
+
+                        <button class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 button fit"
+                            style="margin-bottom: 5%;">
+                            <img src="images/icon/outlook-logo.png" width="18px" height="18px" alt="" class=" img-fluid"
+                                style="margin: 10px;">login with outlook
+                        </button>
+
+                        <button class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 button fit"
+                            style="margin-bottom: 5%;">
+                            <img src="images/icon/google-logo.png" width="18px" height="18px" alt="" class=" img-fluid"
+                                style="margin: 10px;">login with Google
+                        </button>
+
+                        <button class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 button fit"
+                            style="margin-bottom: 5%;">
+                            <img src="images/icon/twitter-logo.png" width="18px" height="18px" alt="" class=" img-fluid"
+                                style="margin: 10px;">login with twitter
+                        </button>
+
+                    </div>
+
+                    <!-- image section -->
+                    <div class="col-xl-6 col-lg-6 col-md-6 d-none d-sm-block d-sm-none d-md-block align-center">
+                        <img src="images/image/ok-image.webp" alt="" width="250">
+                    </div>
+                </section>
+
+                <!--    urls section -->
+                <div class="row">
+                    <p class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top: 5%;">
+                        Do have an account? <a href="" style="color: grey; text-decoration: none;">Sign in</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+
+</html>

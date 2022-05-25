@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!--  This file has been downloaded from bootdey.com @bootdey on twitter -->
+  <!--  All snippets are MIT license http://bootdey.com/license -->
+  <title>Profile settings</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+<body class="is-preload">
+  <div class="container">
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="main-breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="javascript:void(0)">User</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Profile Settings</li>
+      </ol>
+    </nav>
+    <!-- /Breadcrumb -->
+
+
+    <div class="row gutters-sm">
+
+      <!-- start menu card -->
+      <div class="col-md-4 d-none d-md-block">
+        <div class="card">
+          <div class="card-body">
+            <nav class="nav flex-column">
+              <a href="#jobs" data-toggle="tab" class="nav-link">
+                JOBS MANAGEMENT
+              </a>
+              <a href="#profile" data-toggle="tab" class=" nav-link">
+                Profile Information
+              </a>
+              <a href="#account" data-toggle="tab" class=" nav-link">
+                Account Settings
+              </a>
+              <a href="#security" data-toggle="tab" class=" nav-link">
+                Security
+              </a>
+              <a href="#notification" data-toggle="tab" class=" nav-link">
+                Notification
+              </a>
+              <a href="#billing" data-toggle="tab" class=" nav-link">
+                Billing
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- end menu card -->
+
+
+
+
+
+      <!-- start menu for mobile -->
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header border-bottom mb-3 d-flex d-md-none">
+            <ul class="nav card-header-tabs nav-gap-x-1" role="tablist">
+              <li class="nav-item">
+                <a href="#jobs" data-toggle="tab" class="nav-link nav-card"></a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#profile" data-toggle="tab" class="nav-link nav-card"></a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#account" data-toggle="tab" class="nav-link nav-card"></a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#security" data-toggle="tab" class="nav-link nav-card"></a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#notification" data-toggle="tab" class="nav-link nav-card"></a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#billing" data-toggle="tab" class="nav-link nav-card"></a>
+              </li>
+
+            </ul>
+          </div>
+          <!-- end mobile menu -->
+
+
+
+
+
+
+          <!-- start main card -->
+          <div class=" card-body tab-content">
+
+            <!-- JOBS -->
+            <div class="tab-pane active" id="jobs">
+
+              <!-- hidden card for create job -->
+              <div id="id01" class="modal_1">
+                <div class="container-create animate row">
+                  <h1>Post new job</h1>
+                  <br>
+                  <form class="modal-content" action="" method="">
+
+                    <div class="row">
+                      <div class="col-xl-4 col-la-4 col-md-4 col-sm-4 col-xs-4">
+                        <label>Gender</label>
+                        <select name="f1" id="country-name" required>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                        </select>
+                      </div>
+                      <div class="col-xl-4 col-la-4 col-md-4 col-sm-4 col-xs-4">
+                        <label>age</label>
+                        <input type="date" name="f1" id="birht-day" value="" required>
+                      </div>
+                      <div class="col-xl-4 col-la-4 col-md-4 col-sm-4 col-xs-4">
+                        <label>Education</label>
+                        <select name="f1" id="country-name" required>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                        </select>
+                      </div>
+                    </div>
+                    <br>
+
+
+                    <div class="row">
+                      <div class="col-xl-6 col-la-6 col-md-6 col-sm-6 col-xs-6">
+                        <label>Job type</label>
+                        <select name="f1" id="country-name" required>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                        </select>
+                      </div>
+                      <div class="col-xl-6 col-la-6 col-md-6 col-sm-6 col-xs-6">
+                        <label>Location</label>
+                        <select name="f1" id="country-name" required>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                        </select>
+                      </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                      <div class="col-xl-6 col-la-6 col-md-6 col-sm-6 col-xs-6">
+                        <label>Job roles</label>
+                        <select name="f1" id="country-name" required>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                        </select>
+                      </div>
+                      <div class="col-xl-6 col-la-6 col-md-6 col-sm-6 col-xs-6">
+                        <label>Experience</label>
+                        <select name="f1" id="country-name" required>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                        </select>
+                      </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                      <div class="col-xl-12 col-la-12 col-md-12 col-sm-12 col-xs-12">
+                        <label>Job description</label>
+                        <textarea id="bio" placeholder="Write something about you"
+                          style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 62px; margin-bottom: 3%;"></textarea>
+
+                        <label>Job requirements</label>
+                        <textarea id="bio" placeholder="Write something about you"
+                          style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 62px; margin-bottom: 3%;"></textarea>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-xl-3 col-la-3 col-md-3 col-sm-3 col-xs-3" style="margin-top: 2%;">
+                        <input type="submit" id="button-primary">
+                      </div>
+                      <div class="col-xl-3 col-la-3 col-md-3 col-sm-3 col-xs-3" style="margin-top: 2%;">
+                      </div>
+                      <div class="col-xl-3 col-la-3 col-md-3 col-sm-3 col-xs-3" style="margin-top: 2%;">
+                      </div>
+                      <div class="col-xl-3 col-la-3 col-md-3 col-sm-3 col-xs-3" style="margin-top: 2%;">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                          id="button-primary-custom">Cancel</button>
+                      </div>
+                    </div>
+
+                  </form>
+
+                </div>
+              </div>
+              <!-- end card create job -->
+
+
+
+
+
+              <!-- hidden card for edit/del job -->
+              <div id="id02" class="modal_2">
+                <div class="container-create animate row">
+
+                  <div class="row">
+                    <div class="col-xl-12 col-la-12 col-md-12 col-sm-12 col-xs-12">
+                      <h1>Edit / Delete job</h1>
+                    </div>
+                  </div>
+
+                  <form class="modal-content" action="" method="">
+
+                    <div class="row">
+                      <div class="col-xl-12 col-la-12 col-md-12 col-sm-12 col-xs-12">
+                        <label>Select your job id was posted</label>
+                        <input type="text" disabled class="dis">
+                        <small id="fullNameHelp" class="form-text text-muted">Select id job which you posted, and want
+                          delete or edit it now</small>
+                      </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                      <div class="col-xl-4 col-la-4 col-md-4 col-sm-4 col-xs-4">
+                        <label>Gender</label>
+                        <select name="f1" id="country-name" required>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                        </select>
+                      </div>
+                      <div class="col-xl-4 col-la-4 col-md-4 col-sm-4 col-xs-4">
+                        <label>age</label>
+                        <input type="date" name="f1" id="birht-day" value="" required>
+                      </div>
+                      <div class="col-xl-4 col-la-4 col-md-4 col-sm-4 col-xs-4">
+                        <label>Education</label>
+                        <select name="f1" id="country-name" required>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                        </select>
+                      </div>
+                    </div>
+                    <br>
+
+
+                    <div class="row">
+                      <div class="col-xl-6 col-la-6 col-md-6 col-sm-6 col-xs-6">
+                        <label>Job type</label>
+                        <select name="f1" id="country-name" required>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                        </select>
+                      </div>
+                      <div class="col-xl-6 col-la-6 col-md-6 col-sm-6 col-xs-6">
+                        <label>Location</label>
+                        <select name="f1" id="country-name" required>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                        </select>
+                      </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                      <div class="col-xl-6 col-la-6 col-md-6 col-sm-6 col-xs-6">
+                        <label>Job roles</label>
+                        <select name="f1" id="country-name" required>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                        </select>
+                      </div>
+                      <div class="col-xl-6 col-la-6 col-md-6 col-sm-6 col-xs-6">
+                        <label>Experience</label>
+                        <select name="f1" id="country-name" required>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                          <option value="">-</option>
+                        </select>
+                      </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                      <div class="col-xl-12 col-la-12 col-md-12 col-sm-12 col-xs-12">
+                        <label>Job description</label>
+                        <textarea id="bio" placeholder="Write more information about job"
+                          style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 62px; margin-bottom: 3%;"></textarea>
+
+                        <label>Job requirements</label>
+                        <textarea id="bio" placeholder="Write something about what's your requirement in job"
+                          style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 62px; margin-bottom: 3%;"></textarea>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-xl-3 col-la-3 col-md-3 col-sm-3 col-xs-3" style="margin-top: 2%;">
+                        <button type="submit" id="button-primary">Apply changes</button>
+                      </div>
+                      <div class="col-xl-3 col-la-3 col-md-3 col-sm-3 col-xs-3" style="margin-top: 2%;">
+                        <button type="submit" id="button-primary-del">Delete</button>
+                      </div>
+                      <div class="col-xl-3 col-la-3 col-md-3 col-sm-3 col-xs-3" style="margin-top: 2%;">
+                      </div>
+                      <div class="col-xl-3 col-la-3 col-md-3 col-sm-3 col-xs-3" style="margin-top: 2%;">
+                        <button type="button" onclick="document.getElementById('id02').style.display='none'"
+                          id="button-primary-custom">Cancel</button>
+                      </div>
+                    </div>
+
+                  </form>
+
+                </div>
+              </div>
+              <!-- end card edit/del job -->
+
+
+
+
+
+              <!-- START JOB SECTION -->
+              <h6>JOBS MANAGEMENT</h6>
+              <hr>
+              <label>Your jobs :</label>
+
+              <form action="">
+                <div class="row" style="padding: 10px;">
+
+                  <!-- this is one card -->
+                  <div style="padding: 5px;" class="col-xl-4 col-la-4 col-md-6 col-sm-12 col-xs-12">
+                    <input type="radio" name="e-card" id="edit_card">
+                    <label for="edit_card" class="thread-card">
+                      <div class="card">
+                        <!-- <div><span><i class="fas fa-check checker check_btn"></i></span>
+                        </div> -->
+                        <div>
+                          <img class="circle-img thread-img" src="images/pic03.jpg" alt="">
+                        </div>
+                        <h5 class="major mar-icon">Nisl placerat</h5>
+                        <hr>
+                        <div><i class="fa fa-suitcase" aria-hidden="true"></i>
+                          <b class="mar-icon"> Job roles: </b>
+                        </div>
+                        <div><i class="fas fa-stopwatch"></i>
+                          <b class="mar-icon"> Date and Time: </b>
+                        </div>
+                        <div><i class="fab fa-bitcoin"></i>
+                          <b class="mar-icon"> Salary: </b>
+                        </div>
+                        <div><i class="fa fa-location-arrow" aria-hidden="true"> </i>
+                          <b class="mar-icon"> location: </b>
+                        </div>
+                        <br>
+                        <a href="#" class="special">Learn more</a>
+                      </div>
+                    </label>
+                  </div>
+                  <!-- end one card -->
+
+                </div>
+
+                <div class="row" style="margin-top: 10px;">
+                  <div class="col-xl-3 col-la-3 col-md-3 col-sm-3 col-xs-3">
+                    <input type="button" onclick="document.getElementById('id02').style.display='block'"
+                      id="button-primary-del" value="edit/Del job">
+                  </div>
+
+                  <div class="col-xl-3 col-la-3 col-md-3 col-sm-3 col-xs-3">
+                    <button type="button" onclick="document.getElementById('id01').style.display='block'"
+                      id="button-primary">Create
+                      new job</button>
+                  </div>
+                </div>
+              </form>
+
+              <hr>
+
+              <label>Saved jobs :</label>
+              <form action="">
+                <div class="row" style="padding: 10px;">
+
+                  <!-- this is one card -->
+                  <div style="padding: 5px;" class="col-xl-4 col-la-4 col-md-6 col-sm-12 col-xs-12">
+                    <input type="radio" name="s-card" id="saved_card">
+                    <label for="saved_card" class="thread-card">
+                      <div class="card">
+                        <!-- <div><span><i class="fas fa-check checker check_btn"></i></span>
+                        </div> -->
+                        <div>
+                          <img class="circle-img thread-img" src="images/pic03.jpg" alt="">
+                        </div>
+                        <h5 class="major mar-icon">Nisl placerat</h5>
+                        <hr>
+                        <div><i class="fa fa-suitcase" aria-hidden="true"></i>
+                          <b class="mar-icon"> Job roles: </b>
+                        </div>
+                        <div><i class="fas fa-stopwatch"></i>
+                          <b class="mar-icon"> Date and Time: </b>
+                        </div>
+                        <div><i class="fab fa-bitcoin"></i>
+                          <b class="mar-icon"> Salary: </b>
+                        </div>
+                        <div><i class="fa fa-location-arrow" aria-hidden="true"> </i>
+                          <b class="mar-icon"> location: </b>
+                        </div>
+                        <br>
+                        <a href="#" class="special">Learn more</a>
+                      </div>
+                    </label>
+                  </div>
+                  <!-- end one card -->
+
+                </div>
+
+                <div class="row" style="margin-top: 10px;">
+                  <div class="col-xl-3 col-la-3 col-md-3 col-sm-3 col-xs-3"><input type="button" id="button-primary"
+                      value="Un save checked">
+                  </div>
+                </div>
+
+              </form>
+            </div>
+            <!-- END JOBS -->
+
+
+
+
+
+            <!-- PROFILE INFORMATION -->
+            <div class="tab-pane" id="profile">
+              <h6>YOUR PROFILE INFORMATION</h6>
+              <hr>
+
+              <form>
+                <div class="form-group">
+                  <label for="fullName"></label>Full name</label>
+                  <input type="text" id="fullName" placeholder="Enter your fullname" value="">
+                  <small id="fullNameHelp" class="form-text text-muted">Your name may appear around here where you
+                    are
+                    mentioned. You can change or remove it at any time.</small>
+                </div>
+
+                <div class="row" style="margin-bottom: 15px;">
+                  <div class="col-xl-6 col-la-6 col-md-6 col-sm-6 col-xs-6">
+                    <label>Your image *</label>
+                    <label id="button-primary"><input type="file" name="f1" max-size="1000" accept="image/*" required
+                        style="background-color: #4c5c96; opacity: 100%;">Custom Upload</label>
+                  </div>
+
+                  <div class="col-xl-6 col-la-6 col-md-6 col-sm-6 col-xs-6">
+                    <hr style="background-color: #00000000;">
+                    <p>""""""""</p>
+                  </div>
+                </div>
+
+                <div class="row" style="margin-bottom: 15px;">
+                  <div class="col-xl-6 col-la-6 col-md-6 col-sm-6 col-xs-6">
+                    <label>Your ID-Card image *</label>
+                    <label id="button-primary"><input type="file" name="f1" max-size="1000" accept="image/*" required
+                        style="background-color: #4c5c96; opacity: 100%;">Custom Upload</label>
+                  </div>
+
+                  <div class="col-xl-6 col-la-6 col-md-6 col-sm-6 col-xs-6">
+                    <hr style="background-color: #00000000;">
+                    <p>""""""""</p>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Career description</label>
+                  <textarea id="bio" placeholder="Write something about you"
+                    style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 62px;"></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="url">Phone number</label>
+                  <input type="tel" id="number" value="" placeholder="099 999 9999" pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+                    maxlength="12" title="Ten digits code" required onchange="this.value=addSpaces(this.value);">
+                </div>
+                <br>
+
+                <!-- location section -->
+                <div class="form-group">
+                  <h4 for="location">Location</h4>
+                  <section style="margin-bottom: 15px;" class="row">
+
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                      <label>Country</label>
+                      <select name="f1" id="country-name" required>
+                        <option value="">-</option>
+                        <option value="">-</option>
+                        <option value="">-</option>
+                        <option value="">-</option>
+                        <option value="">-</option>
+                      </select>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                      <label>City</label>
+                      <select name="f1" id="city-name" required>
+                        <option value="">-</option>
+                        <option value="">-</option>
+                        <option value="">-</option>
+                        <option value="">-</option>
+                        <option value="">-</option>
+                      </select>
+                    </div>
+
+                  </section>
+                </div>
+
+
+                <div class="form-group small text-muted">
+                  All of the fields on this page are optional and can be deleted at any time, and by filling them
+                  out,
+                  you're giving us consent to share this data wherever your user profile appears.
+                </div>
+
+                <!-- buttons -->
+                <div class="row">
+                  <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <div class="row">
+                      <div style="margin-bottom: 10px;" class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><button
+                          type="submit" id="button-primary">Update
+                          Profile</button></div>
+                      <div style="margin-bottom: 10px;" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <button type="reset" id="button-primary-custom">Reset Changes</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- empty div -->
+                  <div class="col-lg-6 col-md-0 col-sm-0 col-xs-0">
+                  </div>
+
+
+                </div>
+              </form>
+            </div>
+            <!-- END PROFILE INFORMATION -->
+
+
+
+
+
+
+            <!-- ACCOUNT SETTINGS -->
+            <div class="tab-pane" id="account">
+              <h6>ACCOUNT SETTINGS</h6>
+              <hr>
+
+              <form>
+                <h6>Change E-mail</h6>
+                <div class="form-group">
+                  <input type="email" id="E-mail" placeholder="Example-email@ex.com" value="" required maxlength="30">
+                </div>
+
+                <div style="text-align: right;"><button style="width:20%;" id="button-primary">Change</button>
+                </div>
+
+                <hr>
+                <div class="form-group">
+                  <label class="d-block text-danger">Delete Account</label>
+                  <p class="text-muted font-size-sm">Once you delete your account, there is no going back. Please
+                    be
+                    certain.</p>
+                </div>
+
+                <button style="width: 30%;" id="button-primary-del" type="button">Delete Account</button>
+
+              </form>
+
+            </div>
+
+            <!-- SECURITY SETTINGS -->
+            <div class="tab-pane" id="security">
+              <h6>SECURITY SETTINGS</h6>
+              <hr>
+
+              <form>
+                <h6>Change password</h6>
+                <input type="password" name="password" id="password" class="form-control"
+                  placeholder="Enter your old password" required>
+                <input type="password" name="password2" id="password2" class="form-control mt-1"
+                  placeholder="New password" onkeyup="checkPass()" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,50}"
+                  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                  minlength="8" maxlength="50" required>
+                <input type="password" name="password2" id="password2" class="form-control mt-1"
+                  placeholder="Confirm new password" onkeyup="checkPass()"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,50}"
+                  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                  minlength="8" maxlength="50" required>
+                <hr style="width: 50%; margin-bottom: 3%;" align="left">
+                <div id="message">
+                  <h6 class="major">Password must contain the following :</h6>
+                  <p id="letter" class="invalid">1. <b>lowercase</b> letter
+                  </p>
+                  <p id="capital" class="invalid">2. <b>capital
+                      (uppercase)</b>
+                    letter</p>
+                  <p id="number" class="invalid">3. <b>number</b></p>
+                  <p id="length" class="invalid">4. Minimum <b>8
+                      characters</b>
+                  </p>
+                </div>
+
+                <div style="text-align: right;"><button style="width:20%;" id="button-primary">Change</button>
+                </div>
+
+              </form>
+              <hr>
+
+
+              <form>
+                <div class="form-group">
+                  <h6>Two Factor Authentication</h6>
+                  <button id="button-primary-info" type="button">Enable two-factor authentication</button>
+                  <p class="small text-muted mt-2">Two-factor authentication adds an additional layer of security
+                    to
+                    your account by requiring more than just a password to log in.</p>
+                </div>
+
+              </form>
+              <hr>
+
+
+              <form>
+                <div class="form-group mb-0">
+                  <h6>Sessions</h6>
+                  <p class="font-size-sm text-secondary">This is a list of devices that have logged into your
+                    account.
+                    Revoke any sessions that you do not recognize.</p>
+                  <ul class="list-group list-group-sm">
+                    <li class="list-group-item has-icon">
+
+                      <div>
+                        <h6 class="mb-0">San Francisco City 190.24.335.55</h6>
+                        <small class="text-muted">Your current session seen in United States</small>
+                      </div>
+
+                      <button class="btn btn-light btn-sm ml-auto" type="button">More info</button>
+                    </li>
+                  </ul>
+                </div>
+
+              </form>
+            </div>
+
+            <!-- NOTIFICATION SETTINGS -->
+            <div class="tab-pane" id="notification">
+              <h6>NOTIFICATION SETTINGS</h6>
+              <hr>
+
+              <form>
+                <div class="form-group">
+
+                  <label class="d-block mb-0">Security Alerts</label>
+
+                  <div class="small text-muted mb-3">Receive security alert notifications via email</div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1" checked="">
+                    <label class="custom-control-label" for="customCheck1">Email each time a vulnerability is
+                      found</label>
+                  </div>
+
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck2" checked="">
+                    <label class="custom-control-label" for="customCheck2">Email a digest summary of
+                      vulnerability</label>
+                  </div>
+                </div>
+
+                <div class="form-group mb-0">
+                  <label class="d-block">SMS Notifications</label>
+                  <ul class="list-group list-group-sm">
+                    <li class="list-group-item has-icon">
+                      Comments
+                      <div class="custom-control custom-control-nolabel custom-switch ml-auto">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch1" checked="">
+                        <label class="custom-control-label" for="customSwitch1"></label>
+                      </div>
+                    </li>
+
+                    <li class="list-group-item has-icon">
+                      Updates From People
+                      <div class="custom-control custom-control-nolabel custom-switch ml-auto">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                        <label class="custom-control-label" for="customSwitch2"></label>
+                      </div>
+                    </li>
+
+                    <li class="list-group-item has-icon">
+                      Reminders
+                      <div class="custom-control custom-control-nolabel custom-switch ml-auto">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch3" checked="">
+                        <label class="custom-control-label" for="customSwitch3"></label>
+                      </div>
+                    </li>
+
+                    <li class="list-group-item has-icon">
+                      Events
+                      <div class="custom-control custom-control-nolabel custom-switch ml-auto">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch4" checked="">
+                        <label class="custom-control-label" for="customSwitch4"></label>
+                      </div>
+                    </li>
+
+                    <li class="list-group-item has-icon">
+                      Pages You Follow
+                      <div class="custom-control custom-control-nolabel custom-switch ml-auto">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch5">
+                        <label class="custom-control-label" for="customSwitch5"></label>
+                      </div>
+                    </li>
+
+                  </ul>
+                </div>
+              </form>
+            </div>
+
+
+            <!-- BILLING SETTINGS -->
+            <div class="tab-pane" id="billing">
+              <h6>BILLING SETTINGS</h6>
+              <hr>
+              <form>
+                <div class="form-group">
+                  <label class="d-block mb-0">Payment Method</label>
+                  <div class="small text-muted mb-3">You have not added a payment method</div>
+                  <button id="button-primary-info" type="button">Add Payment Method</button>
+                </div>
+                <div class="form-group mb-0">
+                  <label class="d-block">Payment History</label>
+                  <div class="border border-gray-500 bg-gray-200 p-3 text-center font-size-sm">You have not made
+                    any
+                    payment.</div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- end main card -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- CSS -->
+  <style type="text/css">
+    body {
+      background-color: #11121a;
+      background-image: linear-gradient(to top,
+          rgba(46, 49, 65, 0.8),
+          rgba(46, 49, 65, 0.8)),
+        url("../../images/bg.jpg");
+      background-size: auto, cover;
+      background-attachment: fixed, fixed;
+      background-position: center, center;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font: inherit;
+      vertical-align: baseline;
+    }
+
+    body {
+      color: #ffffff;
+      font-family: "Raleway", Helvetica, sans-serif;
+      line-height: 23px;
+      font-weight: 700;
+      font-size: 14px;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    body::-webkit-scrollbar {
+      display: none;
+    }
+
+    .list-group-item {
+      color: #000000;
+    }
+
+    input,
+    select,
+    textarea {
+      font-family: "Source Sans Pro", Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-Size: 14px;
+      Line-Height: 29px;
+      color: #ffffff;
+    }
+
+    .card-body {
+      background-color: #2E3141;
+      border-radius: 5px;
+
+    }
+
+    .nav-link {
+      color: #ffffff;
+      background-color: #2E3141;
+      border-style: none;
+      -moz-transition: background-color 0.3s ease-in-out;
+      -webkit-transition: background-color 0.3s ease-in-out;
+      -ms-transition: background-color 0.3s ease-in-out;
+      transition: background-color 0.3s ease-in-out;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      -ms-appearance: none;
+      appearance: none;
+      border-radius: 5px;
+      border: 0;
+      color: #ffffff !important;
+      cursor: pointer;
+      display: inline-block;
+      font-family: Raleway, Helvetica, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      height: 3.75em;
+      letter-spacing: 0.1em;
+      line-height: 3.75em;
+      padding: 0 2.25em;
+      text-align: left;
+      text-decoration: none;
+      text-transform: uppercase;
+      white-space: nowrap;
+      padding-left: 3%;
+    }
+
+    .nav-link:hover {
+      background-color: #4c5c96;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .nav-link :active {
+      background-color: #45558d;
+    }
+
+    .nav-link:focus {
+      background-color: #4c5c96;
+    }
+
+    .card {
+      background-color: #2E3141;
+      border-radius: 5px;
+      border: none;
+    }
+
+    input[type="search"],
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select,
+    textarea {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      -ms-appearance: none;
+      appearance: none;
+      background: rgba(255, 255, 255, 0.025);
+      border-radius: 5px;
+      border: none;
+      border: solid 2px rgba(255, 255, 255, 0.125);
+      color: inherit;
+      display: block;
+      outline: 0;
+      padding: 0 1em;
+      text-decoration: none;
+      width: 100%;
+      height: 2.75em;
+    }
+
+    input[type="search"]:invalid,
+    input[type="text"]:invalid,
+    input[type="password"]:invalid,
+    input[type="email"]:invalid,
+    input[type="tel"]:invalid,
+    input[type="date"]:invalid,
+    select:invalid,
+    textarea:invalid {
+      box-shadow: none;
+    }
+
+    input[type="search"]:focus,
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus,
+    input[type="date"]:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #5B6BA6;
+      background-color: #333645;
+      color: #ffffff;
+    }
+
+    input[type="search"],
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="date"],
+    input[type="tel"],
+    select {
+      color: white;
+
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+
+    .dis {
+      cursor: not-allowed;
+    }
+
+    select {
+      cursor: pointer;
+    }
+
+    input[type="date"] {
+      cursor: text;
+    }
+
+    .custom-control-label {
+      cursor: pointer;
+    }
+
+    #button-primary {
+      background-color: #4c5c96;
+      box-shadow: none;
+
+      -moz-transition: background-color 0.2s ease-in-out;
+      -webkit-transition: background-color 0.2s ease-in-out;
+      -ms-transition: background-color 0.2s ease-in-out;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    #button-primary:hover {
+      background-color: #53639e;
+    }
+
+    #button-primary:active {
+      background-color: #3d4f8d;
+    }
+
+    #button-primary-del {
+      background-color: #DC3545;
+      box-shadow: none;
+
+      -moz-transition: background-color 0.2s ease-in-out;
+      -webkit-transition: background-color 0.2s ease-in-out;
+      -ms-transition: background-color 0.2s ease-in-out;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    #button-primary-del:hover {
+      background-color: #da4756;
+    }
+
+    #button-primary-del:active {
+      background-color: #dd2b3d;
+    }
+
+
+    #button-primary,
+    #button-primary-del,
+    #button-primary-info {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      -ms-appearance: none;
+      appearance: none;
+      border-radius: 5px;
+      border: 0;
+      color: #ffffff !important;
+      cursor: pointer;
+      display: inline-block;
+      font-family: Raleway, Helvetica, sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      width: 100%;
+      height: 4em;
+      letter-spacing: 0.1em;
+      line-height: 3.75em;
+      padding: 3px;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      white-space: nowrap;
+      outline: none;
+    }
+
+    #button-primary-info {
+      background-color: #138496;
+      border-style: none;
+
+      -moz-transition: background-color 0.2s ease-in-out;
+      -webkit-transition: background-color 0.2s ease-in-out;
+      -ms-transition: background-color 0.2s ease-in-out;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    #button-primary-info:hover {
+      background-color: #1592a5;
+      border-style: none;
+    }
+
+    #button-primary-info:active {
+      background-color: #117585;
+    }
+
+
+    #button-primary-custom {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      -ms-appearance: none;
+      appearance: none;
+      -moz-transition: background-color 0.2s ease-in-out;
+      -webkit-transition: background-color 0.2s ease-in-out;
+      -ms-transition: background-color 0.2s ease-in-out;
+      transition: background-color 0.2s ease-in-out;
+      background-color: transparent;
+      border-radius: 5px;
+      border: 0;
+      box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.125);
+      color: #ffffff !important;
+      cursor: pointer;
+      display: inline-block;
+      font-family: Raleway, Helvetica, sans-serif;
+      font-size: 75%;
+      font-weight: 700;
+      width: 100%;
+      height: 4em;
+      letter-spacing: 0.1em;
+      line-height: 3.75em;
+      padding: 3px;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      white-space: nowrap;
+      outline: none;
+    }
+
+
+    #button-primary-custom:hover {
+      background-color: rgba(255, 255, 255, 0.025);
+    }
+
+
+    #button-primary-custom:active {
+      background-color: rgba(255, 255, 255, 0.075);
+    }
+
+
+    hr {
+      background-color: #696969;
+    }
+
+
+    .circle-img {
+      display: block;
+      border-radius: 50%;
+      width: 25%;
+
+    }
+
+    .mar-icon {
+      padding-left: 3%;
+    }
+
+    .thread-card {
+      margin: 0;
+      padding: 5%;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+      display: block;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-top: 5px;
+      margin-bottom: 5px;
+
+      -moz-transition: box-shadow 0.3s ease-in-out;
+      -webkit-transition: box-shadow 0.3s ease-in-out;
+      -ms-transition: box-shadow 0.3s ease-in-out;
+      transition: box-shadow 0.3s ease-in-out;
+
+      -moz-transition: transform 0.3s ease-in-out;
+      -webkit-transition: transform 0.3s ease-in-out;
+      -ms-transition: transform 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out;
+    }
+
+
+    .thread-card:hover {
+      transform: scale(1.02);
+      cursor: pointer;
+    }
+
+    .thread-card:active {
+      transform: scale(.97);
+    }
+
+
+    .thread-img {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 3%;
+      margin-bottom: 3%;
+
+      -moz-transition: box-shadow 0.3s ease-in-out;
+      -webkit-transition: box-shadow 0.3s ease-in-out;
+      -ms-transition: box-shadow 0.3s ease-in-out;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+
+    a.special:not(.button) {
+      text-decoration: none;
+      border-bottom: 0;
+      display: block;
+      font-family: Raleway, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      margin: 0 0 2em 0;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+
+
+    a.special:not(.button):before {
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      line-height: 1;
+      text-transform: none !important;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+    }
+
+
+    a.special:not(.button):before {
+      -moz-transition: background-color 0.2s ease-in-out;
+      -webkit-transition: background-color 0.2s ease-in-out;
+      -ms-transition: background-color 0.2s ease-in-out;
+      transition: background-color 0.2s ease-in-out;
+      border-radius: 100%;
+      border: solid 2px rgba(255, 255, 255, 0.125);
+      content: "\f105";
+      display: inline-block;
+      font-size: 15px;
+      height: 2em;
+      line-height: 1.75em;
+      margin-right: 0.85em;
+      text-align: center;
+      text-indent: 0.15em;
+      vertical-align: middle;
+      width: 2em;
+    }
+
+
+    a.special:not(.button):hover:before {
+      background-color: rgba(255, 255, 255, 0.025);
+    }
+
+
+    a.special:not(.button):active:before {
+      background-color: rgba(255, 255, 255, 0.075);
+    }
+
+
+    .nav-card {
+      background-color: #11121a;
+    }
+
+    .nav-card:hover {
+      background-color: #00094b;
+    }
+
+
+    .modal-content {
+      background-color: #282B39;
+      border-style: none;
+      border-color: none;
+    }
+
+
+    .container-create {
+      background-color: #282b39;
+      border-style: none;
+      box-shadow: 0 0px 100px 0 #4c5c969a, 0 0px 10px 0 #964c5c80;
+      border-color: #53639e;
+      border-radius: 5px;
+      padding: 16px;
+      margin: 5% auto 15% auto;
+      width: 80%;
+    }
+
+
+    /* The Modal (background) */
+    .modal_1,
+    .modal_2 {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+      padding-top: 60px;
+
+    }
+
+
+    /* Add Zoom Animation */
+    .animate {
+      -webkit-animation: animatezoom 1.0s;
+      animation: animatezoom 1.0s;
+    }
+
+
+    @-webkit-keyframes animatezoom {
+      from {
+        -webkit-transform: scale(0)
+      }
+
+      to {
+        -webkit-transform: scale(1)
+      }
+    }
+
+    @keyframes animatezoom {
+      from {
+        transform: scale(0)
+      }
+
+      to {
+        transform: scale(1)
+      }
+    }
+
+
+    /* .check_btn {
+      width: 15px;
+      height: 15px;
+      border-radius: 3px;
+      background-color: #8e909f;
+
+      -moz-transition: background-color 0.3s ease-in-out;
+      -webkit-transition: background-color 0.3s ease-in-out;
+      -ms-transition: background-color 0.3s ease-in-out;
+      transition: background-color 0.3s ease-in-out;
+    } */
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    input[id="saved_card"]:checked~label[for="saved_card"],
+    input[id="edit_card"]:checked~label[for="edit_card"] {
+      box-shadow: 0 4px 8px 0 #4C5C96, 0 6px 20px 0 #4C5C96;
+
+      -moz-transition: box-shadow 0.3s ease-in-out;
+      -webkit-transition: box-shadow 0.3s ease-in-out;
+      -ms-transition: box-shadow 0.3s ease-in-out;
+      transition: box-shadow 0.3s ease-in-out;
+
+      -moz-transition: transform 0.3s ease-in-out;
+      -webkit-transition: transform 0.3s ease-in-out;
+      -ms-transition: transform 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    /* input[id="saved_card"]:checked~label[for="saved_card"] .card .check_btn,
+    input[id="edit_card"]:checked~label[for="edit_card"] .card .check_btn {
+      -moz-transition: background-color 0.3s ease-in-out;
+      -webkit-transition: background-color 0.3s ease-in-out;
+      -ms-transition: background-color 0.3s ease-in-out;
+      transition: background-color 0.3s ease-in-out;
+      background-color: #4C5C96;
+    } */
+
+    input[id="saved_card"]:checked~label[for="saved_card"] .card .thread-img,
+    input[id="edit_card"]:checked~label[for="edit_card"] .card .thread-img {
+      -moz-transition: box-shadow 0.3s ease-in-out;
+      -webkit-transition: box-shadow 0.3s ease-in-out;
+      -ms-transition: box-shadow 0.3s ease-in-out;
+      transition: box-shadow 0.3s ease-in-out;
+      box-shadow: 0 4px 8px 0 #4C5C96, 0 6px 20px 0 #4C5C96;
+    }
+
+    /* end card style */
+  </style>
+
+
+
+  <!-- java script -->
+  <script>
+    // Get the modal1 and model2
+    var modal1 = document.getElementById('id01');
+    var modal2 = document.getElementById('id02');
+
+    // When the user clicks anywhere outside of the modal1 and model2, close it
+    window.onclick = function (event) {
+      if (event.target == modal1) {
+        modal1.style.display = "none";
+      }
+      else if (event.target == modal2) {
+        modal2.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
